@@ -166,4 +166,11 @@ public class DepartmentTest {
         d.addEmployee(m3);
         assertEquals(0, d.getSingleEmployeeExpense("mm11"));
     }
+
+     @Test
+    public void testGetNoEmployeeExistEfdxpense()  {
+        String sss= "      fdfs  fdsf  ";
+         Department d = new Department();
+         d.preintStr(sss);
+     }
 }

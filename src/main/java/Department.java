@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.StringTokenizer;
 
 /**
  * Created by wcao on 8/15/2016.
@@ -48,5 +49,12 @@ public class Department {
             }
         }
         return null;
+    }
+
+    public void preintStr(String str){
+        StringTokenizer token = new StringTokenizer(str," ");
+        while( token.hasMoreTokens()){
+            System.out.println(token.nextElement());
+        }
     }
 }
