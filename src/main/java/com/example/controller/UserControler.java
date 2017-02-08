@@ -28,6 +28,7 @@ public class UserControler {
 
     @RequestMapping(method = RequestMethod.GET)
     public List<User> findAllUsers(){
+
         return userRepository.findAll();
     }
 
